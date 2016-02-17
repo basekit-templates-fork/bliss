@@ -18,7 +18,7 @@
             </div>
             {% endif %}
             <div class="header-companyname">
-                {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
+                {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
                 {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
             </div>
             {% if plugins.ecommerce.store.live %}

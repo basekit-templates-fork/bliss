@@ -1,0 +1,102 @@
+// -------------------------------------
+// Bliss: LESS > FORK CHANGES
+// -------------------------------------
+
+.header-search {
+    margin-right: -120px;
+}
+
+.header-wrapper {
+    padding: 5px 2%;
+}
+
+.template-title {
+    margin-top: 40px!important;
+}
+
+.company-link:hover {
+    color: @@color__companyname--text;
+}
+
+.extendednavigation__navigation-item {
+    display: block;
+    flex: initial;
+}
+
+.navigation-item.folder.open .navigation-list {
+    background-color: @color-swatch7;
+}
+
+.navigation-item .item-name {
+    padding: 8px 30px;
+}
+
+// Dropdown Menu
+// -------------
+.navigation-item.folder {
+    .item-name {
+        color: @color__navigation--text;
+    }
+}
+
+.feature__background-image {
+    height: 700px;
+}
+
+.feature {
+    .content-wrap {
+        padding: 0;
+        vertical-align: bottom;
+    }
+    .content-inner-wrap {
+        padding: 30px 80px 0px;
+        border: 8px solid @color-swatch7;
+        border-bottom: 0;
+        @media @tablet {
+            padding: 20px 50px 0px;
+        }
+        @media @mobile {
+            padding: 10px 10px 0px;
+        }
+    }
+    .headline:after {
+        display: none;
+    }
+}
+
+
+
+// Variables Feature
+.feature {
+    &__content-inner-wrap {
+        background-color: @color__feature-content--background;
+    }
+}
+
+
+.contactform__legend,
+.signupform__legend,
+.blogsearch__legend,
+.ecomproductslist__product-item-title, 
+.ecomfeaturedproducts__product-item-title,
+.template-title h1 {
+    &:after {
+        display: none;
+    }
+}
+
+.responsiveslideshow .pagination-item.selected .button--pagination,
+.listing-pagination .pagination-item.current a,
+.template-footer p,
+.template-footer a,
+.template-footer h1,
+.template-footer h2,
+.template-footer h3,
+.template-footer h4 {
+    color: @color__button--text;
+}
+
+.basket-toggle:hover {
+    border-bottom: 0;
+}
+
