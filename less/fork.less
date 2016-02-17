@@ -2,6 +2,10 @@
 // Bliss: LESS > FORK CHANGES
 // -------------------------------------
 
+
+// Header
+// -------------
+
 .header-search {
     margin-right: -120px;
 }
@@ -18,6 +22,10 @@
     color: @color__companyname--text;
 }
 
+
+// Navigation
+// -------------
+
 .extendednavigation__navigation-item {
     display: block;
     flex: initial;
@@ -32,12 +40,15 @@
 }
 
 // Dropdown Menu
-// -------------
 .navigation-item.folder {
     .item-name {
         color: @color__navigation--text;
     }
 }
+
+
+// Feature
+// -------------
 
 .feature__background-image {
     height: 700px;
@@ -65,7 +76,6 @@
 }
 
 
-
 // Variables Feature
 .feature {
     &__content-inner-wrap {
@@ -73,6 +83,9 @@
     }
 }
 
+
+// Forms
+// -------------
 
 .contactform__legend,
 .signupform__legend,
@@ -83,22 +96,6 @@
     &:after {
         display: none;
     }
-}
-
-.responsiveslideshow .pagination-item.selected .button--pagination,
-.listing-pagination .pagination-item.current a,
-.template-footer p,
-.template-footer a,
-.template-footer span,
-.template-footer h1,
-.template-footer h2,
-.template-footer h3,
-.template-footer h4 {
-    color: @color__button--text;
-}
-
-.basket-toggle:hover {
-    border-bottom: 0;
 }
 
 form,
@@ -123,12 +120,6 @@ input.input[type=email]:focus {
     padding: 14px 10px !important;
 }
 
-.ecomproductslist__form,
-.ecomproduct__form,
-.ecombasketsummary__summary-form {
-    border: 0;
-}
-
 .blogsearch__input,
 .signupform__input {
     border-right: 0!important;
@@ -141,12 +132,20 @@ input.input[type=email]:focus {
     background-color: @color-swatch7;
 }
 
-.product-attributes .product-attribute-title {
-    color: @color__p--text;
-}
 
-.ecomproductslist__button:hover {
-    background-color: @color__button--background--hover;
+// Footer
+// -------------
+
+.responsiveslideshow .pagination-item.selected .button--pagination,
+.listing-pagination .pagination-item.current a,
+.template-footer p,
+.template-footer a,
+.template-footer span,
+.template-footer h1,
+.template-footer h2,
+.template-footer h3,
+.template-footer h4 {
+    color: @color__button--text;
 }
 
 .template-footer {
@@ -159,11 +158,43 @@ input.input[type=email]:focus {
     }
 }
 
+
+// Ecommerce
+// -------------
+
+.basket-toggle:hover {
+    border-bottom: 0;
+}
+
+.ecomproductslist__form,
+.ecomproduct__form,
+.ecombasketsummary__summary-form {
+    border: 0;
+}
+
+.product-attributes .product-attribute-title {
+    color: @color__p--text;
+}
+
+.ecomproductslist__button:hover {
+    background-color: @color__button--background--hover;
+}
+
+
+// Blog
+// -------------
+
 .post-image .image {
     max-height: 500px;
 }
 
 .blogpost__image-link {
     background-color: transparent;
+}
+
+.product-image .image-link {
+    @media @tablet {
+        margin-top: 20px;
+    }
 }
 
