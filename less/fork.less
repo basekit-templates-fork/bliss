@@ -100,3 +100,51 @@
     border-bottom: 0;
 }
 
+form,
+.form {
+    background-color: white;
+    border: 5px solid @color-swatch7;
+}
+
+input[type="search"], 
+input[type="email"], 
+input[type="password"], 
+textarea, 
+.input--single-line {
+        border: 5px solid @color-swatch7;
+}
+
+.contactform__input {
+    padding: 10px 10px !important;
+}
+
+input.input[type=email]:focus {
+    padding: 14px 10px !important;
+}
+
+.ecomproductslist__form,
+.ecomproduct__form,
+.ecombasketsummary__summary-form {
+    border: 0;
+}
+
+.blogsearch__input,
+.signupform__input {
+    border-right: 0!important;
+    @media @mobile {
+        border-right: 5px solid @color-swatch7!important;
+    }
+}
+
+.contactform__label {
+    background-color: @color-swatch7;
+}
+
+.product-attributes .product-attribute-title {
+    color: @color__p--text;
+}
+
+.ecomproductslist__button:hover {
+    background-color: @color__button--background--hover;
+}
+
