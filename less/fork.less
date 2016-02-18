@@ -19,7 +19,7 @@
 }
 
 .company-link:hover {
-    color: @color__companyname--text;
+    color: @color__companyname--text!important;
 }
 
 
@@ -108,16 +108,20 @@ input[type="search"],
 input[type="email"], 
 input[type="password"], 
 textarea, 
-.input--single-line {
+.input--single-line,
+input.blogsearch__input.input[type=search] {
         border: 5px solid @color-swatch7;
+        &:focus {
+            border: 5px solid @color-swatch7!important;
+        }
 }
 
 .contactform__input {
-    padding: 10px 10px !important;
+    padding: 10px 10px 11px!important;
 }
 
 input.input[type=email]:focus {
-    padding: 14px 10px !important;
+    border: 5px solid @color-swatch7!important;
 }
 
 .blogsearch__input,
